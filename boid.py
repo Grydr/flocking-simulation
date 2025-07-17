@@ -2,6 +2,7 @@ from typing import Optional
 import pygame, random, math
 
 from global_var import *
+import global_var
 
 class Boid:
     def __init__(self, pos: Optional[pygame.Vector2] = None, vel: Optional[pygame.Vector2] = None, acc: Optional[pygame.Vector2] = None) -> None:
@@ -111,9 +112,9 @@ class Boid:
         alignment = self.alignment(boids)
         separation = self.separation(boids)
 
-        cohesion *= COHESION_FACTOR
-        alignment *= ALIGNMENT_FACTOR
-        separation *= SEPARATION_FACTOR
+        cohesion *= global_var.COHESION_FACTOR
+        alignment *= global_var.ALIGNMENT_FACTOR
+        separation *= global_var.SEPARATION_FACTOR
 
         self.acceleration += cohesion
         self.acceleration += alignment
