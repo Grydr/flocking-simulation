@@ -1,0 +1,12 @@
+import pygame
+
+WIDTH = 1280
+HEIGHT = 720
+WINSIZE = (WIDTH, HEIGHT)
+
+ALIGNMENT_PERCEPTION = 50
+COHESION_PERCEPTION = 100
+SEPARATION_PERCEPTION = 50
+
+BLACK = pygame.Color(0, 0, 0)         # Black
+WHITE = pygame.Color(255, 255, 255)   # White
