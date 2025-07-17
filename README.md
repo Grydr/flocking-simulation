@@ -1,5 +1,7 @@
+![Sim Thumbnail](image/Screenshot.png)
+
 # Boids(Flocking) Simulation
-A Boid/Flocking simulation for Code In Place 2025 Final Project written in Python 
+A Boid/Flocking simulation for Code In Place 2025 Final Project written in Python
 
 ## Dependencies
 - pygame-ce v2.5.5
