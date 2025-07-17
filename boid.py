@@ -1,6 +1,5 @@
 from typing import Optional
 import pygame, random, math
-from pygame.locals import *
 
 from global_var import *
 
@@ -112,9 +111,9 @@ class Boid:
         alignment = self.alignment(boids)
         separation = self.separation(boids)
 
-        cohesion *= 1.0
-        alignment *= 1.0
-        separation *= 1.5
+        cohesion *= COHESION_FACTOR
+        alignment *= ALIGNMENT_FACTOR
+        separation *= SEPARATION_FACTOR
 
         self.acceleration += cohesion
         self.acceleration += alignment
